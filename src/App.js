@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
-import { Header, Menu, Profile } from './Components'
+import { Header, Profile, SideBar } from './Components'
 
 const App = () => {
 	return (
 		<div className='app-wrapper'>
 			<Header />
-			<Menu />
+			<SideBar />
 			<Profile />
 		</div>
 	)

@@ -2,31 +2,7 @@ import React from 'react'
 import styles from './Profile.module.css'
 
 const Profile = () => {
-	return (
-		<profile className={styles.profile}>
-			<div>
-				<img
-					src='https://wallpapers.com/images/hd/ultra-wide-nature-9e39l4h3spqgynd2.jpg'
-					alt='mainPhoto'
-				/>
-			</div>
-			<div>
-				<img
-					src='https://yt3.googleusercontent.com/-CFTJHU7fEWb7BYEb6Jh9gm1EpetvVGQqtof0Rbh-VQRIznYYKJxCaqv_9HeBcmJmIsp2vOO9JU=s900-c-k-c0x00ffffff-no-rj'
-					alt='avatarPhoto'
-				/>
-				ava + description
-			</div>
-			<div className={styles.item}>
-				My Post
-				<div className={styles.item}>New Post</div>
-			</div>
-			<div className={styles.post}>
-				<div className={styles.item}>post 1</div>
-				<div className={styles.item}>post 2</div>
-			</div>
-		</profile>
-	)
+	return <profile className={styles.profile}>cover ava + desc</profile>
 }
 
 export default Profile

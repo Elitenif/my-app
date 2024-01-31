@@ -1,14 +1,6 @@
 .profile {
-	background-color: #39ff7b;
-	grid-area: main;
-}
-.profile img {
-	width: 1000px;
-	height: 200px;
-}
-.post {
-	color: rgb(229, 201, 255);
-}
-.item {
-	color: rgb(120, 0, 0);
+	grid-area: profile;
+
+	grid-column: 3/13;
+	grid-row: 2/13;
 }
