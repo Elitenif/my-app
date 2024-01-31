@@ -15,15 +15,15 @@ const Profile = () => {
 					src='https://yt3.googleusercontent.com/-CFTJHU7fEWb7BYEb6Jh9gm1EpetvVGQqtof0Rbh-VQRIznYYKJxCaqv_9HeBcmJmIsp2vOO9JU=s900-c-k-c0x00ffffff-no-rj'
 					alt='avatarPhoto'
 				/>
-				description
+				ava + description
 			</div>
-			<div>
+			<div className={styles.item}>
 				My Post
-				<div>New Post</div>
+				<div className={styles.item}>New Post</div>
 			</div>
-			<div>
-				<div>post 1</div>
-				<div>post 2</div>
+			<div className={styles.post}>
+				<div className={styles.item}>post 1</div>
+				<div className={styles.item}>post 2</div>
 			</div>
 		</profile>
 	)

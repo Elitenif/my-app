@@ -3,21 +3,21 @@ import styles from './Menu.module.css'
 const Menu = () => {
 	return (
 		<menu className={styles.menu}>
-			<a href='#'>
-				<div>Profile</div>
-			</a>
-			<a href='#'>
-				<div>Messages</div>
-			</a>
-			<a href='#'>
-				<div>News</div>
-			</a>
-			<a href='#'>
-				<div>Music</div>
-			</a>
-			<a href='#'>
-				<div>Settings</div>
-			</a>
+			<div className={`${styles.item} ${styles.active}`}>
+				<a href='#'>Profile</a>
+			</div>
+			<div className={styles.item}>
+				<a href='#'>Messages</a>
+			</div>
+			<div className={styles.item}>
+				<a href='#'>News</a>
+			</div>
+			<div className={styles.item}>
+				<a href='#'>Music</a>
+			</div>
+			<div className={styles.item}>
+				<a href='#'>Settings</a>
+			</div>
 		</menu>
 	)
 }
