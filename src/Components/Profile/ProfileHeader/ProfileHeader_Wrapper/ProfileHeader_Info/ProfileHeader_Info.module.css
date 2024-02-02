@@ -7,6 +7,12 @@
 	flex-direction: column;
 	text-align: start;
 }
+.ProfileInfo_FullInfo {
+	--padding-left-right: 5px;
+	margin-top: 6px;
+	max-width: calc(100% + var(--padding-left-right));
+	padding: 3px 0;
+}
 .OwnerPageName_Icons {
 	display: inline-block;
 	vertical-align: top;

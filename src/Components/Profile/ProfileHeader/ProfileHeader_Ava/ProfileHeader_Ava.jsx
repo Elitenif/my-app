@@ -4,7 +4,8 @@ import styles from './ProfileHeader_Ava.module.css'
 const ProfileHeader_Ava = () => {
 	return (
 		<div className={styles.ProfileHeader_Ava}>
-			<span className={styles.AvatarRich}>
+			<div className={styles.OwnerPageAvatar}></div>
+			<span className={`${styles.AvatarRich} ${styles.AvatarRich_Shadow}`}>
 				<div className={styles.AvatarRich_Backgroung}></div>
 				<img
 					className={styles.AvatarRich_Img}

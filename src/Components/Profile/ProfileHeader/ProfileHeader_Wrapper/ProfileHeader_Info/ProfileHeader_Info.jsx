@@ -1,4 +1,5 @@
 import React from 'react'
+import ActionsGroup_module_Root from './ActionsGroup_module_Root/ActionsGroup_module_Root'
 import OwnerNameIcon_module_Icon from './OwnerNameIcon_module_Icon/OwnerNameIcon-module_Icon'
 
 import styles from './ProfileHeader_Info.module.css'
@@ -29,7 +30,9 @@ const ProfileHeader_Info = () => {
 						/>
 					</span>
 				</div>
-				<div className='ProfileInfo_FullInfo'></div>
+				<div className={styles.ProfileInfo_FullInfo}>
+					<ActionsGroup_module_Root />
+				</div>
 			</div>
 		</div>
 	)

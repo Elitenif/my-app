@@ -1,14 +1,19 @@
 .ProfileHeader {
-	display: flex;
-	flex-direction: row;
-	height: 150px;
 	position: relative;
+	display: flex;
 	margin-top: -25px;
-	padding: 15px;
-	border-radius: 10px;
-	background-color: #222222;
+
+	padding: var(--profile-header-padding);
+	--vkui--size_border_radius_paper--regular: 12px;
 	--block-padding-left-right: 20px;
+	border-radius: var(--vkui--size_border_radius_paper--regular);
+	background-color: inherit;
 	--profile-header-padding: var(--block-padding-left-right, 20px);
+	--inner-controls-total-offset-no-cover: 56px;
+	--inner-controls-padding-top-no-cover: calc(
+		var(--inner-controls-total-offset-no-cover) - var(--profile-header-padding)
+	);
+	--profile-avatar-size: 150px;
 }
 .ProfileHeader::after {
 	content: '';
@@ -18,6 +23,6 @@
 	right: 0;
 	bottom: 0;
 	border: var(--thin-border, 0.5px) solid var(--vkui--color_separator_primary);
-	border-radius: inherit;
+
 	pointer-events: none;
 }
