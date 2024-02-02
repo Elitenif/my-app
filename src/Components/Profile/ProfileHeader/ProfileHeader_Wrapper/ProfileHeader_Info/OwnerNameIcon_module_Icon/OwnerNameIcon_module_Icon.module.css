@@ -1,0 +1,10 @@
+.OwnerNameIcon_module_Icon {
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	height: var(--name-line-height, 26px);
+	vertical-align: top;
+	margin-left: 8px;
+	cursor: pointer;
+}

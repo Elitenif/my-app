@@ -1,0 +1,23 @@
+.ProfileHeader {
+	display: flex;
+	flex-direction: row;
+	height: 150px;
+	position: relative;
+	margin-top: -25px;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: #222222;
+	--block-padding-left-right: 20px;
+	--profile-header-padding: var(--block-padding-left-right, 20px);
+}
+.ProfileHeader::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: var(--thin-border, 0.5px) solid var(--vkui--color_separator_primary);
+	border-radius: inherit;
+	pointer-events: none;
+}

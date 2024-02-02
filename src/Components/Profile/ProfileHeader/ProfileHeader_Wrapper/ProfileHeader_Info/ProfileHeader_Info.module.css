@@ -1,0 +1,36 @@
+.ProfileHeader_Info {
+	min-width: 0;
+}
+.ProfileInfo {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	text-align: start;
+}
+.OwnerPageName_Icons {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 100%;
+	word-break: keep-all;
+	white-space: nowrap;
+	overflow: hidden;
+	overflow-wrap: break-word;
+}
+.OwnerPageName_NoWrapText {
+	display: inline-block;
+	max-width: 100%;
+	vertical-align: top;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.emoji {
+	width: 16px;
+	height: 16px;
+	border: 0;
+	vertical-align: -3px;
+	margin: 0 1px;
+	display: inline-block;
+	overflow: hidden;
+}
