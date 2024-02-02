@@ -1,10 +1,13 @@
 body {
 	padding: 0;
 	margin: 0;
+	background-color: #141414;
 }
 .app-wrapper {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(12, 1fr);
 	background-color: #141414;
+	max-width: 1200px;
+	margin: 0 auto;
 }
