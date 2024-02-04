@@ -1,7 +1,6 @@
 import React from 'react'
 import ProfileHeader_Actions from './ProfileHeader_Actions/ProfileHeader_Actions'
 import ProfileHeader_Info from './ProfileHeader_Info/ProfileHeader_Info'
-
 import styles from './ProfileHeader_Wrapper.module.css'
 
 const ProfileHeader_Wrapper = () => {

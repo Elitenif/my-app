@@ -4,7 +4,7 @@ import { Header, Profile, SideBar } from './Components'
 
 const App = () => {
 	return (
-		<div className='app-wrapper'>
+		<div className='app_wrapper'>
 			<Header />
 			<SideBar />
 			<Profile />

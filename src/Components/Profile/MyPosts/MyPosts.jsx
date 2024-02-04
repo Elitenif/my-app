@@ -6,11 +6,13 @@ const MyPosts = () => {
 	return (
 		<div className={styles.MyPosts}>
 			My posts
-			<textarea name='New Post' id='' cols='124' rows='4'></textarea>
+			<div className={styles.inputArea}>
+				<input type='text' />
+			</div>
 			<button>Add post</button>
 			<div className={styles.posts}>
-				<Post />
-				<Post />
+				<Post name='Liza' like='12' comment='2' />
+				<Post name='Ilnar' like='662' comment='53' />
 			</div>
 		</div>
 	)
