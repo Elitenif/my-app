@@ -2,12 +2,11 @@
 	position: relative;
 	display: flex;
 	margin-top: -25px;
-
 	padding: var(--profile-header-padding);
 	--vkui--size_border_radius_paper--regular: 12px;
-	--block-padding-left-right: 20px;
 	border-radius: var(--vkui--size_border_radius_paper--regular);
 	background-color: inherit;
+	--block-padding-left-right: 20px;
 	--profile-header-padding: var(--block-padding-left-right, 20px);
 	--inner-controls-total-offset-no-cover: 56px;
 	--inner-controls-padding-top-no-cover: calc(
@@ -15,6 +14,7 @@
 	);
 	--profile-avatar-size: 150px;
 }
+
 .ProfileHeader::after {
 	content: '';
 	position: absolute;

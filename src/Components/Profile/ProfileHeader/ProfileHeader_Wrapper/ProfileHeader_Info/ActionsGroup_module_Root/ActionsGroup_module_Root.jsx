@@ -55,8 +55,8 @@ const ActionsGroup_module_Root = () => {
 						<svg
 							version='1.1'
 							fill='#6b6b6b'
-							width='26'
-							height='26'
+							width='36'
+							height='36'
 							viewBox='0 0 36 36'
 							preserveAspectRatio='xMidYMid meet'
 							xmlns='http://www.w3.org/2000/svg'
