@@ -4,13 +4,13 @@ const SideBar = () => {
 	return (
 		<div className={styles.sideBar}>
 			<div className={styles.item}>
-				<a href='#'>My profile</a>
+				<a href='/My profile'>My profile</a>
 			</div>
 			<div className={styles.item}>
 				<a href='#'>News</a>
 			</div>
 			<div className={styles.item}>
-				<a href='#'>Messenger</a>
+				<a href='/Messenger'>Messenger</a>
 			</div>
 			<div className={styles.item}>
 				<a href='#'>My profile</a>

@@ -1,15 +1,15 @@
 import React from 'react'
 import MyPosts from './MyPosts/MyPosts'
 import ProfileHeader from './ProfileHeader/ProfileHeader'
+import VkSpacing from './VkSpacing/VkSpacing'
 import Wallpaper from './Wallpaper/Wallpaper'
-
-import styles from './Profile.module.css'
 
 const Profile = () => {
 	return (
-		<div className={styles.profile}>
+		<div>
 			<Wallpaper />
 			<ProfileHeader />
+			<VkSpacing />
 			<MyPosts />
 		</div>
 	)

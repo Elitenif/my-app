@@ -7,7 +7,9 @@ const App = () => {
 		<div className='app_wrapper'>
 			<Header />
 			<SideBar />
-			<Profile />
+			<div className='app_wrapper_content'>
+				<Profile />
+			</div>
 		</div>
 	)
 }

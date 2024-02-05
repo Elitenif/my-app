@@ -1,13 +1,14 @@
-body {
-	padding: 0;
-	margin: 0;
-	background-color: #141414;
-}
 .app_wrapper {
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(12, 1fr);
-	background-color: #141414;
-	max-width: 1200px;
 	margin: 0 auto;
+	display: grid;
+	max-width: 1200px;
+	grid-template-areas:
+		'h h'
+		's c';
+
+	grid-template-columns: 2fr 10fr;
+	grid-template-rows: 60px, 1fr;
+}
+.app_wrapper_content {
+	grid-area: c;
 }
