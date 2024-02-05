@@ -1,0 +1,28 @@
+.ProfileHeader {
+	position: relative;
+	display: flex;
+	margin-top: -25px;
+	padding: var(--profile-header-padding);
+	--vkui--size_border_radius_paper--regular: 12px;
+	border-radius: var(--vkui--size_border_radius_paper--regular);
+	background-color: inherit;
+	--block-padding-left-right: 20px;
+	--profile-header-padding: var(--block-padding-left-right, 20px);
+	--inner-controls-total-offset-no-cover: 56px;
+	--inner-controls-padding-top-no-cover: calc(
+		var(--inner-controls-total-offset-no-cover) - var(--profile-header-padding)
+	);
+	--profile-avatar-size: 150px;
+}
+
+.ProfileHeader::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: var(--thin-border, 0.5px) solid var(--vkui--color_separator_primary);
+
+	pointer-events: none;
+}

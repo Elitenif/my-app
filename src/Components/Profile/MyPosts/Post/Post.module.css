@@ -1,0 +1,18 @@
+.Post {
+	color: white;
+}
+.PostInfo {
+	display: flex;
+	align-items: center;
+}
+
+.PostInfo > img {
+	height: 65px;
+	width: 65px;
+	border-radius: 50%;
+	order: 1;
+}
+.PostInfo h5 {
+	color: white;
+	order: 2;
+}

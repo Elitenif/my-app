@@ -1,8 +1,7 @@
 .profile {
-	background-color: #39ff7b;
-	grid-area: main;
-}
-.profile img {
-	width: 1000px;
-	height: 200px;
+	grid-area: profile;
+	grid-column: 3/13;
+	grid-row: 2/13;
+	color: rgb(255, 255, 255);
+	font-size: 16px;
 }
