@@ -1,13 +1,14 @@
 import React from 'react'
 import styles from './SideBar.module.css'
+
 const SideBar = () => {
 	return (
 		<div className={styles.sideBar}>
 			<div className={styles.item}>
-				<a href='/My profile'>My profile</a>
+				<a href='/Profile'>My profile</a>
 			</div>
 			<div className={styles.item}>
-				<a href='#'>News</a>
+				<a href='/News'>News</a>
 			</div>
 			<div className={styles.item}>
 				<a href='/Messenger'>Messenger</a>
