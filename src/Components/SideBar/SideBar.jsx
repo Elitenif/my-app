@@ -1,52 +1,53 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import styles from './SideBar.module.css'
 
 const SideBar = () => {
 	return (
-		<div className={styles.sideBar}>
+		<nav className={styles.sideBar}>
 			<div className={styles.item}>
-				<a href='/Profile'>My profile</a>
+				<NavLink to='/Profile'>My profile</NavLink>
 			</div>
 			<div className={styles.item}>
-				<a href='/News'>News</a>
+				<NavLink to='/News'>News</NavLink>
 			</div>
 			<div className={styles.item}>
-				<a href='/Messenger'>Messenger</a>
+				<NavLink to='/Messenger'>Messenger</NavLink>
 			</div>
 			<div className={styles.item}>
-				<a href='#'>My profile</a>
+				<NavLink to='#'>My profile</NavLink>
 			</div>
 			<div className={styles.item}>
-				<a href='#'>Calls</a>
+				<NavLink to='#'>Calls</NavLink>
 			</div>
 			<div className={styles.item}>
-				<a href='#'>Friends</a>
+				<NavLink to='#'>Friends</NavLink>
 			</div>
 			<div className={styles.item}>
-				<a href='#'>Communities</a>
+				<NavLink to='#'>Communities</NavLink>
 			</div>
 			<div className={styles.item}>
-				<a href='#'>Photos</a>
+				<NavLink to='#'>Photos</NavLink>
 			</div>
 			<div className={styles.item}>
-				<a href='#'>Music</a>
+				<NavLink to='#'>Music</NavLink>
 			</div>
 			<div className={styles.item}>
-				<a href='#'>Videos</a>
+				<NavLink to='#'>Videos</NavLink>
 			</div>
 			<div className={styles.item}>
-				<a href='#'>Clips</a>
+				<NavLink to='#'>Clips</NavLink>
 			</div>
 			<div className={styles.item}>
-				<a href='#'>Games</a>
+				<NavLink to='#'>Games</NavLink>
 			</div>
 			<div className={styles.item}>
-				<a href='#'>Stickers</a>
+				<NavLink to='#'>Stickers</NavLink>
 			</div>
 			<div className={styles.item}>
-				<a href='#'>Market</a>
+				<NavLink to='#'>Market</NavLink>
 			</div>
-		</div>
+		</nav>
 	)
 }
 

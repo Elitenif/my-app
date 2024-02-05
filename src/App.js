@@ -13,7 +13,6 @@ const App = () => {
 	return (
 		<div className='app_wrapper'>
 			<Header />
-			<SideBar />
 			<Router>
 				<div className='app_wrapper_content'>
 					<Routes>
@@ -22,6 +21,7 @@ const App = () => {
 						<Route path='/messenger' element={<Messenger />} />
 					</Routes>
 				</div>
+				<SideBar />
 			</Router>
 		</div>
 	)
