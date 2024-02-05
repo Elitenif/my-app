@@ -1,5 +1,6 @@
 .ProfileHeader_Info {
 	min-width: 0;
+	color: white;
 }
 .ProfileInfo {
 	display: flex;

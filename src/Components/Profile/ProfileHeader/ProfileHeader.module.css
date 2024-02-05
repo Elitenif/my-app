@@ -13,6 +13,7 @@
 		var(--inner-controls-total-offset-no-cover) - var(--profile-header-padding)
 	);
 	--profile-avatar-size: 150px;
+	background-color: #222222;
 }
 
 .ProfileHeader::after {

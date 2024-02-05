@@ -46,6 +46,8 @@
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+	--vkui--color_text_subhead: #939393;
+	color: var(--vkui--color_text_subhead);
 }
 .ActionsGroupItem_module_Before {
 	margin-right: 4px;
