@@ -1,6 +1,7 @@
 .sideBar {
 	grid-area: s;
 	background-color: #141414;
+	padding: 20px;
 }
 
 .item > a {
@@ -17,4 +18,7 @@
 }
 .item > :hover {
 	background-color: #262626 !important;
+}
+.item.active a {
+	color: gold; /* Изменение цвета текста для активной (выбранной) ссылки */
 }

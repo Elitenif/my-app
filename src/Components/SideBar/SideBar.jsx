@@ -1,21 +1,37 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import styles from './SideBar.module.css'
 
 const SideBar = () => {
+	const location = useLocation()
 	return (
 		<nav className={styles.sideBar}>
-			<div className={styles.item}>
-				<NavLink to='/Profile'>My profile</NavLink>
+			<div
+				className={`${styles.item} ${
+					location.pathname === '/profile' && styles.active
+				}`}
+			>
+				<NavLink to='/profile' activeClassName={styles.active}>
+					My profile
+				</NavLink>
 			</div>
-			<div className={styles.item}>
-				<NavLink to='/News'>News</NavLink>
+			<div
+				className={`${styles.item} ${
+					location.pathname === '/news' && styles.active
+				}`}
+			>
+				<NavLink to='/news' activeClassName={styles.active}>
+					News
+				</NavLink>
 			</div>
-			<div className={styles.item}>
-				<NavLink to='/Messenger'>Messenger</NavLink>
-			</div>
-			<div className={styles.item}>
-				<NavLink to='#'>My profile</NavLink>
+			<div
+				className={`${styles.item} ${
+					location.pathname === '/messenger' && styles.active
+				}`}
+			>
+				<NavLink to='/messenger' activeClassName={styles.active}>
+					Messenger
+				</NavLink>
 			</div>
 			<div className={styles.item}>
 				<NavLink to='#'>Calls</NavLink>
