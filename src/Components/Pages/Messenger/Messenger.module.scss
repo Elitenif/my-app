@@ -1,0 +1,149 @@
+.messenger_wrapper {
+	position: relative;
+
+	.mainDialogues {
+		background-color: #c5c5c5;
+		min-height: 856px;
+		height: auto;
+		height: 500px;
+		--header-height: 48px;
+		min-height: calc(100vh - var(--header-height) - 32px);
+		position: relative;
+		padding-top: 15px;
+		padding-bottom: 2px;
+		&.mainDialogues_classic {
+			width: 550px;
+			min-height: 500px;
+			height: auto;
+		}
+		.im-create {
+			--vkui--color_background_content: #222222;
+			width: 316px;
+			position: absolute;
+			z-index: 115;
+			top: 15px;
+			height: 0;
+			max-height: 100%;
+			background: var(--vkui--color_background_content);
+			overflow: hidden;
+			opacity: 0;
+			transition: opacity 0.1s linear;
+			.im_page_classic.im_page.im_page__dialogs {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				padding-bottom: 45px;
+				height: auto;
+				min-height: calc(100vh - var(--header-height) - 32px);
+				background: var(--vkui--color_background_content);
+				border-radius: var(--vkui--size_border_radius_paper--regular);
+				position: static;
+				top: 0;
+				bottom: 0;
+			}
+		}
+		.im-create.im-create_classic {
+			--header-height: 48px;
+			--page-block-offset: 16px;
+			width: 550px;
+			position: fixed;
+			top: calc(var(--header-height) + var(--page-block-offset, 15px));
+		}
+		.im_page__dialogs {
+			min-height: 829px;
+			.im_page_classic.im-page.im_page__header {
+				--header-height: 48px;
+				--page-block-offset: 16px;
+				--vkui--color_background: #141414;
+				position: fixed;
+				width: 550px;
+				max-width: 550px;
+				top: calc(var(--header-height) + var(--page-block-offset, 15px) + 48px);
+				left: auto;
+				margin-left: -1px;
+				margin-top: calc(-48px - var(--page-block-offset, 15px));
+				border-top: solid var(--page-block-offset, 15px)
+					var(--vkui--color_background);
+				border-left: solid 1px var(--vkui--color_background);
+				border-right: solid 1px var(--vkui--color_background);
+				border-bottom: none;
+				border-radius: 0;
+			}
+		}
+	}
+	// Боковая часть
+	.switchingDialogues {
+		position: fixed;
+		margin-left: 565px;
+		--header-height: 48px;
+		--page-block-offset: 16px;
+		--narrow-column-width: 345px;
+		top: calc(var(--header-height) + var(--page-block-offset, 15px) - 15px);
+		width: var(--narrow-column-width, 230px);
+		max-width: var(--narrow-column-width, 230px);
+
+		.pageBlock {
+			--narrow-column-width: 345px;
+			--vkui--color_separator_primary: #363738;
+			--page-block-shadow: 0 0 0 var(--thin-border, 1px)
+				var(--vkui--color_separator_primary);
+			--vkui--size_border_radius_paper--regular: 12px;
+			--vkui--color_background_content: #222222;
+			max-width: var(--narrow-column-width, 230px);
+			--page-block-offset: 16px;
+			position: relative;
+			background: var(--vkui--color_background_content);
+			border-radius: var(--vkui--size_border_radius_paper--regular);
+			box-shadow: var(--page-block-shadow);
+			margin: var(--page-block-offset, 15px) 0 0;
+
+			a {
+				text-decoration: none;
+				#ui_rmenu_all {
+					margin-bottom: 2px;
+				}
+				&.ui_rmenu_item {
+				}
+				&.ui_rmenu_item {
+					--vkui--color_text_primary: #e1e3e6;
+					--vkui--size_border_radius--regular: 8px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					cursor: pointer;
+					color: var(--vkui--color_text_primary);
+					padding: 4px 12px;
+					box-sizing: border-box;
+					height: 36px;
+					border-left: 0;
+					border-radius: var(--vkui--size_border_radius--regular);
+					line-height: normal;
+					display: flex;
+					align-items: center;
+				}
+				&.ui_rmenu_item_sel {
+					--vkui--vkontakte_background_hover_alpha: rgba(255, 255, 255, 0.08);
+					background-color: var(--vkui--vkontakte_background_hover_alpha);
+				}
+				.ui_rmenu_item_label {
+					font-size: 13px;
+					font-weight: 400;
+					-webkit-font-smoothing: subpixel-antialiased;
+					-moz-osx-font-smoothing: auto;
+					flex-grow: 1;
+					display: flex;
+					align-items: center;
+					min-width: 0;
+				}
+			}
+
+			&:last-child {
+				margin-bottom: 15px;
+			}
+			&.ui_rmenu {
+				padding: 8px 8px 6px;
+				position: relative;
+			}
+		}
+	}
+}
